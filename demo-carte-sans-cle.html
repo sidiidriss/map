@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wassalni Maps — démo sans clé API</title>
+<link href="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.css" rel="stylesheet" />
+<script src="https://unpkg.com/maplibre-gl@4/dist/maplibre-gl.js"></script>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; font-family: -apple-system, "Poppins", Arial, sans-serif; }
+  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+  #status { position: absolute; z-index: 10; top: 12px; left: 12px;
+    background: #ffffffee; padding: 8px 14px; border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15); font-size: 13px; color: #333; }
+</style>
+</head>
+<body>
+
+<div id="status">Chargement de la carte (aucune clé nécessaire)...</div>
+<div id="map"></div>
+
+<script type="module">
+  import { Protocol } from "https://esm.sh/pmtiles@3";
+  import layers from "https://esm.sh/protomaps-themes-base@2";
+
+  const status = document.getElementById("status");
+
+  try {
+    // Enregistre le protocole pmtiles:// auprès de MapLibre
+    const protocol = new Protocol();
+    maplibregl.addProtocol("pmtiles", protocol.tile);
+
+    // Fichier PMTiles public, mondial, gratuit, sans clé (mis à jour par Protomaps)
+    const BASEMAP = "https://data.source.coop/protomaps/openstreetmap/v4.pmtiles";
+
+    const style = {
+      version: 8,
+      glyphs: "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf",
+      sprite: "https://protomaps.github.io/basemaps-assets/sprites/v4/light",
+      sources: {
+        protomaps: {
+          type: "vector",
+          url: "pmtiles://" + BASEMAP,
+          attribution: '<a href="https://protomaps.com">Protomaps</a> © <a href="https://openstreetmap.org">OpenStreetMap</a>'
+        }
+      },
+      layers: layers("protomaps", { /* flavor par défaut = thème clair type Google Maps */
+        background: "#f2efe9", earth: "#f2efe9", water: "#a9d6f5",
+        wood_a: "#d6ecd0", wood_b: "#cfe8cf", park_a: "#c8e6c9", park_b: "#c8e6c9",
+        buildings: "#e3ded4", major: "#ffffff", major_casing: "#e0a95c",
+        highway: "#fecb6b", highway_casing: "#e0913c"
+      })
+    };
+
+    const map = new maplibregl.Map({
+      container: "map",
+      style: style,
+      center: [-15.9785, 18.0858], // Nouakchott
+      zoom: 12
+    });
+    map.addControl(new maplibregl.NavigationControl(), "top-right");
+    map.on("load", () => { status.textContent = "Carte chargée ✓ (données OSM via Protomaps, sans clé)"; });
+    map.on("error", (e) => { status.textContent = "Erreur MapLibre : " + (e.error && e.error.message || JSON.stringify(e).slice(0,200)); });
+  } catch (err) {
+    status.textContent = "Exception : " + (err && err.message || err);
+  }
+</script>
+
+</body>
+</html>
