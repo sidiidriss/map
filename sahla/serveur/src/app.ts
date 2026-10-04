@@ -52,6 +52,8 @@ export function creerServeur(deps: DependancesServeur): http.Server {
     conversation_id: z.string().max(64).optional(),
     message: z.string().trim().min(1).max(deps.limites.caracteresParMessage),
     langue: z.enum(Object.keys(LANGUES) as [string, ...string[]]).optional(),
+    // voix : l'app transcrit la parole de l'utilisateur et lira la réponse à voix haute.
+    canal: z.enum(["voix", "texte"]).default("texte"),
     contexte: z
       .object({
         prenom: champLibre(40),
@@ -157,6 +159,7 @@ export function creerServeur(deps: DependancesServeur): http.Server {
         message: corps.message,
         contexte: texteContexte({
           langue: corps.langue,
+          canal: corps.canal,
           prenom: corps.contexte?.prenom || undefined,
           ecran: corps.contexte?.ecran || undefined,
           connecte: Boolean(req.headers.authorization),

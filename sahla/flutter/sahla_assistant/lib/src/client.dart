@@ -29,17 +29,23 @@ class SahlaClient {
   }
 
   /// Envoie un message et diffuse la réponse de Sahla au fil de l'eau.
+  ///
+  /// [canal] vaut `SahlaCanal.voix` quand le message est une transcription de la
+  /// voix de l'utilisateur et que la réponse sera lue à voix haute : Sahla
+  /// répond alors en phrases courtes, sans mise en forme.
   Stream<SahlaEvenement> envoyer({
     required String message,
     required String langue,
     String? conversationId,
     SahlaContexte? contexte,
+    SahlaCanal canal = SahlaCanal.texte,
   }) async* {
     final requete = http.Request('POST', urlServeur.resolve('v1/sahla/message'))
       ..headers.addAll(await _entetes())
       ..body = jsonEncode({
         'message': message,
         'langue': langue,
+        'canal': canal.name,
         if (conversationId != null) 'conversation_id': conversationId,
         if (contexte != null) 'contexte': contexte.versJson(),
       });

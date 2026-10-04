@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "description": "Phrases enregistrées par la voix officielle de Sahla. Chaque phrase est jouée par l'app à un moment précis, avec l'expression (pose) de la mascotte indiquée.",
+  "fichiers": "voix/{langue}/{cle}.wav (enregistrement d'origine) ; l'app utilise voix/{langue}/{cle}.m4a",
+  "langues": {
+    "fr": {
+      "nom": "Français",
+      "statut": "pret"
+    },
+    "ar": {
+      "nom": "Arabe",
+      "statut": "pret"
+    },
+    "mey": {
+      "nom": "Hassaniya",
+      "statut": "proposition_a_valider"
+    },
+    "ff": {
+      "nom": "Pulaar",
+      "statut": "proposition_a_valider"
+    },
+    "snk": {
+      "nom": "Soninké",
+      "statut": "a_ecrire"
+    },
+    "wo": {
+      "nom": "Wolof",
+      "statut": "proposition_a_valider"
+    },
+    "en": {
+      "nom": "Anglais",
+      "statut": "pret"
+    },
+    "es": {
+      "nom": "Espagnol",
+      "statut": "pret"
+    },
+    "pt": {
+      "nom": "Portugais",
+      "statut": "pret"
+    },
+    "zh": {
+      "nom": "Chinois",
+      "statut": "pret"
+    }
+  },
+  "phrases": [
+    {
+      "cle": "accueil",
+      "pose": "hello",
+      "quand": "Première ouverture de Sahla.",
+      "ton": "Chaleureux et souriant, comme on accueille quelqu'un à la maison.",
+      "textes": {
+        "fr": "Bonjour, je suis Sahla ! Une course, une livraison, votre solde ? Dites-moi, je vous écoute.",
+        "ar": "مرحبًا، أنا سهلة! رحلة، توصيل، أو رصيدك؟ تفضّل، أنا أسمعك.",
+        "mey": "السلام عليكم، آن سهلة! تبغي مشوار، توصيل، ولا تشوف رصيدك؟ گول، آن نسمعك.",
+        "ff": "Jam waali, ko min woni Sahla! Taksi, neldugol colis, walla ceede maa? Haal, mido heddii ma.",
+        "snk": null,
+        "wo": "Salaam aleekum, maa ngi tudd Sahla! Taksi, yónnee colis, walla sa kalpe? Waxal, maa ngi lay déglu.",
+        "en": "Hi, I'm Sahla! A ride, a delivery, or your balance? Go ahead, I'm listening.",
+        "es": "¡Hola, soy Sahla! ¿Un viaje, una entrega o su saldo? Dígame, le escucho.",
+        "pt": "Olá, eu sou a Sahla! Uma corrida, uma entrega ou o seu saldo? Diga, estou a ouvir.",
+        "zh": "您好，我是 Sahla！叫车、送货，还是查余额？请说，我在听。"
+      }
+    },
+    {
+      "cle": "accueil_retour",
+      "pose": "hello",
+      "quand": "Réouverture de Sahla les fois suivantes.",
+      "ton": "Familier et joyeux, court.",
+      "textes": {
+        "fr": "Re-bonjour ! Je vous écoute.",
+        "ar": "أهلًا من جديد! أنا أسمعك.",
+        "mey": "مرحبا بيك من جديد! آن نسمعك.",
+        "ff": "Jam waali kadi! Mido heddii ma.",
+        "snk": null,
+        "wo": "Dalal ak jamm! Maa ngi lay déglu.",
+        "en": "Welcome back! I'm listening.",
+        "es": "¡Hola de nuevo! Le escucho.",
+        "pt": "Olá de novo! Estou a ouvir.",
+        "zh": "欢迎回来！我在听。"
+      }
+    },
+    {
+      "cle": "silence",
+      "pose": "hello",
+      "quand": "Le micro s'est ouvert mais l'utilisateur n'a rien dit.",
+      "ton": "Doux, encourageant.",
+      "textes": {
+        "fr": "Je n'ai rien entendu. Touchez le micro et parlez-moi.",
+        "ar": "لم أسمع شيئًا. اضغط على الميكروفون وتحدّث معي.",
+        "mey": "ما سمعت شي. اضغط على الميكرو وتكلم معاي.",
+        "ff": "Mi nanaani hay huunde. Tappu e mikoro oo, haalan kam.",
+        "snk": null,
+        "wo": "Dégguma dara. Bësal ci mikro bi te wax ak man.",
+        "en": "I didn't hear anything. Tap the microphone and talk to me.",
+        "es": "No he oído nada. Toque el micrófono y hábleme.",
+        "pt": "Não ouvi nada. Toque no microfone e fale comigo.",
+        "zh": "我没有听到声音。请点击麦克风，和我说话。"
+      }
+    },
+    {
+      "cle": "pas_compris",
+      "pose": "oops",
+      "quand": "La transcription est incompréhensible.",
+      "ton": "Désolé mais léger, sans gêne.",
+      "textes": {
+        "fr": "Pardon, je n'ai pas bien compris. Vous pouvez répéter ?",
+        "ar": "عذرًا، لم أفهم جيدًا. هل يمكنك أن تعيد؟",
+        "mey": "اسمح لي، ما فهمت زين. تگدر تعاود؟",
+        "ff": "Yaafo, mi faamaani no feewi. A waawi fillitde?",
+        "snk": null,
+        "wo": "Baal ma, dégguma bu baax. Mën nga ko baamtu?",
+        "en": "Sorry, I didn't quite catch that. Could you say it again?",
+        "es": "Perdón, no le he entendido bien. ¿Puede repetirlo?",
+        "pt": "Desculpe, não percebi bem. Pode repetir?",
+        "zh": "抱歉，我没听清楚。可以再说一遍吗？"
+      }
+    },
+    {
+      "cle": "recherche_1",
+      "pose": "search",
+      "quand": "Pendant que Sahla réfléchit (joué au hasard parmi les 3 variantes).",
+      "ton": "Affairé, naturel, à mi-voix.",
+      "textes": {
+        "fr": "Je regarde ça…",
+        "ar": "دعني أرى…",
+        "mey": "خلّيني نشوف…",
+        "ff": "Accu mi ƴeewa…",
+        "snk": null,
+        "wo": "Ma xool…",
+        "en": "Let me check…",
+        "es": "Déjeme ver…",
+        "pt": "Deixe-me ver…",
+        "zh": "我看一下…"
+      }
+    },
+    {
+      "cle": "recherche_2",
+      "pose": "search",
+      "quand": "Pendant que Sahla réfléchit (variante 2).",
+      "ton": "Affairé, naturel.",
+      "textes": {
+        "fr": "Un instant, je vérifie…",
+        "ar": "لحظة، أتحقق…",
+        "mey": "لحظة، نتأكد…",
+        "ff": "Seeɗa, mi ƴeewtoo…",
+        "snk": null,
+        "wo": "Xaaral tuuti, maa ngi seet…",
+        "en": "One moment, I'm checking…",
+        "es": "Un momento, lo compruebo…",
+        "pt": "Um momento, estou a verificar…",
+        "zh": "请稍等，我查一下…"
+      }
+    },
+    {
+      "cle": "recherche_3",
+      "pose": "search",
+      "quand": "Pendant que Sahla réfléchit (variante 3).",
+      "ton": "Affairé, naturel.",
+      "textes": {
+        "fr": "Je cherche pour vous…",
+        "ar": "أبحث لك…",
+        "mey": "نفتش لك…",
+        "ff": "Mido yiylana ma…",
+        "snk": null,
+        "wo": "Maa ngi la koy seetal…",
+        "en": "I'm looking that up for you…",
+        "es": "Lo estoy buscando…",
+        "pt": "Estou a procurar…",
+        "zh": "我正在帮您查找…"
+      }
+    },
+    {
+      "cle": "attente_longue",
+      "pose": "search",
+      "quand": "La réponse tarde (plus de 8 secondes).",
+      "ton": "Rassurant, patient.",
+      "textes": {
+        "fr": "Ça prend un peu plus de temps que prévu, je suis toujours là.",
+        "ar": "الأمر يستغرق وقتًا أطول قليلًا، ما زلت معك.",
+        "mey": "الحاجة طوّلت شوي، آن مازلت معاك.",
+        "ff": "Ɗum ɓooyii seeɗa, mido wondi e maa tawo.",
+        "snk": null,
+        "wo": "Dafa yàgg tuuti, waaye maa ngi fi rekk.",
+        "en": "This is taking a little longer than usual. I'm still here.",
+        "es": "Esto tarda un poco más de lo normal. Sigo aquí.",
+        "pt": "Está a demorar um pouco mais do que o normal. Continuo aqui.",
+        "zh": "这需要多一点时间，我还在。"
+      }
+    },
+    {
+      "cle": "en_route",
+      "pose": "go",
+      "quand": "La course est commandée, le chauffeur arrive.",
+      "ton": "Énergique, enthousiaste.",
+      "textes": {
+        "fr": "C'est parti ! Votre chauffeur est en route.",
+        "ar": "انطلقنا! السائق في الطريق إليك.",
+        "mey": "يالله! الشيفور في الطريق لك.",
+        "ff": "Ɗum fuɗɗii! Dognoowo maa ina e laawol.",
+        "snk": null,
+        "wo": "Mu ngi ñëw! Sa dawalkat ngi ci yoon wi.",
+        "en": "We're off! Your driver is on the way.",
+        "es": "¡En marcha! Su conductor está en camino.",
+        "pt": "Vamos lá! O seu motorista está a caminho.",
+        "zh": "出发啦！司机正在赶来。"
+      }
+    },
+    {
+      "cle": "livraison_en_route",
+      "pose": "go",
+      "quand": "Une livraison est en cours.",
+      "ton": "Énergique, enthousiaste.",
+      "textes": {
+        "fr": "Votre colis est en route !",
+        "ar": "طردك في الطريق!",
+        "mey": "الكولي متاعك في الطريق!",
+        "ff": "Colis maa ina e laawol!",
+        "snk": null,
+        "wo": "Sa colis ngi ci yoon wi!",
+        "en": "Your parcel is on its way!",
+        "es": "¡Su paquete está en camino!",
+        "pt": "A sua encomenda está a caminho!",
+        "zh": "您的包裹正在路上！"
+      }
+    },
+    {
+      "cle": "confirmer_bouton",
+      "pose": "go",
+      "quand": "Sahla a préparé une commande : l'utilisateur doit confirmer à l'écran.",
+      "ton": "Clair, engageant.",
+      "textes": {
+        "fr": "Touchez le bouton à l'écran pour confirmer.",
+        "ar": "اضغط على الزر في الشاشة للتأكيد.",
+        "mey": "اضغط على البوطون في الشاشة باش تأكد.",
+        "ff": "Tappu e butoŋ oo e yaynirde ngam teeŋtinde.",
+        "snk": null,
+        "wo": "Bësal ci bitoŋ bi ci écran bi ngir dëggal ko.",
+        "en": "Tap the button on the screen to confirm.",
+        "es": "Toque el botón en la pantalla para confirmar.",
+        "pt": "Toque no botão no ecrã para confirmar.",
+        "zh": "请点击屏幕上的按钮确认。"
+      }
+    },
+    {
+      "cle": "bravo_commande",
+      "pose": "bravo",
+      "quand": "La commande est confirmée.",
+      "ton": "Joyeux, fier, comme un petit « youpi ».",
+      "textes": {
+        "fr": "C'est confirmé ! Bonne route.",
+        "ar": "تم التأكيد! رحلة سعيدة.",
+        "mey": "تأكد! طريق السلامة.",
+        "ff": "Ɗum teeŋtinaama! Laawol jam.",
+        "snk": null,
+        "wo": "Dëggal nañu ko! Yoon wu baax.",
+        "en": "Confirmed! Have a good trip.",
+        "es": "¡Confirmado! Buen viaje.",
+        "pt": "Confirmado! Boa viagem.",
+        "zh": "已确认！一路顺风。"
+      }
+    },
+    {
+      "cle": "bravo_recharge",
+      "pose": "bravo",
+      "quand": "Recharge du portefeuille réussie.",
+      "ton": "Joyeux.",
+      "textes": {
+        "fr": "Recharge réussie ! Votre portefeuille est à jour.",
+        "ar": "تم الشحن بنجاح! محفظتك محدّثة.",
+        "mey": "الشحن دخل! محفظتك محدّثة.",
+        "ff": "Ceede ɗee naatii! Portefeuille maa hesɗitinaama.",
+        "snk": null,
+        "wo": "Recharge bi sotti na! Sa kalpe yeesal nañu ko.",
+        "en": "Top-up successful! Your wallet is up to date.",
+        "es": "¡Recarga realizada! Su monedero está al día.",
+        "pt": "Carregamento feito! A sua carteira está atualizada.",
+        "zh": "充值成功！您的钱包已更新。"
+      }
+    },
+    {
+      "cle": "aucune_commande",
+      "pose": "empty",
+      "quand": "Aucune commande en cours.",
+      "ton": "Calme, un peu rêveur.",
+      "textes": {
+        "fr": "Vous n'avez aucune commande en cours.",
+        "ar": "ليس لديك أي طلب جارٍ.",
+        "mey": "ما عندك حتى طلبية دروك.",
+        "ff": "A alaa komand jooni.",
+        "snk": null,
+        "wo": "Amoo benn komand léegi.",
+        "en": "You don't have any orders in progress.",
+        "es": "No tiene ningún pedido en curso.",
+        "pt": "Não tem nenhum pedido em curso.",
+        "zh": "您目前没有进行中的订单。"
+      }
+    },
+    {
+      "cle": "erreur_reseau",
+      "pose": "oops",
+      "quand": "La connexion a coupé.",
+      "ton": "Désolé mais positif.",
+      "textes": {
+        "fr": "Oups, la connexion a coupé. On réessaie ?",
+        "ar": "عذرًا، انقطع الاتصال. هل نحاول مرة أخرى؟",
+        "mey": "اسمح لي، الكونكسيون طاحت. نعاودو؟",
+        "ff": "Yaafo, jokkondiral ngal taƴii. Min fuɗɗitoo?",
+        "snk": null,
+        "wo": "Baal ma, connexion bi dog na. Ñu jéemaat?",
+        "en": "Oops, the connection dropped. Shall we try again?",
+        "es": "Vaya, se ha cortado la conexión. ¿Lo intentamos de nuevo?",
+        "pt": "Ups, a ligação caiu. Tentamos outra vez?",
+        "zh": "哎呀，网络断了。我们再试一次？"
+      }
+    },
+    {
+      "cle": "indisponible",
+      "pose": "oops",
+      "quand": "Le service Sahla ne répond pas.",
+      "ton": "Désolé, calme.",
+      "textes": {
+        "fr": "Je ne suis pas disponible pour le moment. Réessayez dans un instant.",
+        "ar": "لست متاحة حاليًا. حاول بعد قليل.",
+        "mey": "آن ما نگدر نعاونك دروك. عاود من بعد شوي.",
+        "ff": "Mi heɓaaka jooni. Fuɗɗito seeɗa.",
+        "snk": null,
+        "wo": "Mënuma tontu léegi. Jéemaatal tuuti ci kanam.",
+        "en": "I'm not available right now. Please try again in a moment.",
+        "es": "No estoy disponible en este momento. Inténtelo en un instante.",
+        "pt": "Não estou disponível neste momento. Tente daqui a pouco.",
+        "zh": "我暂时无法服务，请稍后再试。"
+      }
+    },
+    {
+      "cle": "hors_zone",
+      "pose": "oops",
+      "quand": "Le trajet demandé n'est pas desservi.",
+      "ton": "Désolé, sincère.",
+      "textes": {
+        "fr": "Désolée, ce trajet est en dehors de notre zone.",
+        "ar": "عذرًا، هذا المسار خارج منطقة خدمتنا.",
+        "mey": "اسمح لي، هذا المشوار برّا المنطقة متاعنا.",
+        "ff": "Yaafo, ndee laawol ina yaltii e diiwaan amen.",
+        "snk": null,
+        "wo": "Baal ma, yoon wii mu ngi ci biti sunu zone.",
+        "en": "Sorry, this trip is outside our service area.",
+        "es": "Lo siento, este trayecto está fuera de nuestra zona.",
+        "pt": "Desculpe, este trajeto está fora da nossa zona.",
+        "zh": "抱歉，这段行程不在我们的服务范围内。"
+      }
+    },
+    {
+      "cle": "paiement_refuse",
+      "pose": "oops",
+      "quand": "Le paiement a échoué.",
+      "ton": "Désolé, aidant.",
+      "textes": {
+        "fr": "Oups, le paiement n'est pas passé. Vérifiez votre solde ou choisissez un autre moyen de paiement.",
+        "ar": "عذرًا، لم يتم الدفع. تحقّق من رصيدك أو اختر وسيلة دفع أخرى.",
+        "mey": "اسمح لي، الخلاص ما دخل. شوف رصيدك ولا اختار طريقة خلاص أخرى.",
+        "ff": "Yaafo, njoɓdi ndii yahaani. Ƴeew ceede maa walla suɓo laawol njoɓdi goɗngol.",
+        "snk": null,
+        "wo": "Baal ma, fey gi jàllul. Seetal sa xaalis walla tànn beneen anam bu fey.",
+        "en": "Oops, the payment didn't go through. Check your balance or choose another payment method.",
+        "es": "Vaya, el pago no se ha realizado. Compruebe su saldo o elija otro medio de pago.",
+        "pt": "Ups, o pagamento não passou. Verifique o seu saldo ou escolha outro meio de pagamento.",
+        "zh": "哎呀，付款没有成功。请检查余额，或选择其他付款方式。"
+      }
+    },
+    {
+      "cle": "micro_refuse",
+      "pose": "oops",
+      "quand": "L'utilisateur a refusé l'accès au micro.",
+      "ton": "Doux, sans reproche.",
+      "textes": {
+        "fr": "J'ai besoin du micro pour vous entendre. Vous pouvez aussi m'écrire.",
+        "ar": "أحتاج إلى الميكروفون لأسمعك. يمكنك أيضًا أن تكتب لي.",
+        "mey": "نحتاج الميكرو باش نسمعك. تگدر زادة تكتب لي.",
+        "ff": "Mi soklii mikoro ngam nanude ma. A waawi kadi winndande kam.",
+        "snk": null,
+        "wo": "Soxla naa mikro bi ngir dégg la. Mën nga it bind ma.",
+        "en": "I need the microphone to hear you. You can also type to me.",
+        "es": "Necesito el micrófono para oírle. También puede escribirme.",
+        "pt": "Preciso do microfone para o ouvir. Também pode escrever-me.",
+        "zh": "我需要麦克风才能听到您。您也可以打字给我。"
+      }
+    },
+    {
+      "cle": "non_connecte",
+      "pose": "hello",
+      "quand": "L'utilisateur n'est pas connecté à son compte.",
+      "ton": "Aimable, simple.",
+      "textes": {
+        "fr": "Connectez-vous à votre compte Sehelli pour que je puisse vous aider.",
+        "ar": "سجّل الدخول إلى حسابك في سهّلي حتى أتمكن من مساعدتك.",
+        "mey": "ادخل لحسابك في سهّلي باش نگدر نعاونك.",
+        "ff": "Naatu e konte Sehelli maa ngam mi waawa wallude ma.",
+        "snk": null,
+        "wo": "Duggal ci sa kont Sehelli ngir ma mën la dimbali.",
+        "en": "Sign in to your Sehelli account so I can help you.",
+        "es": "Inicie sesión en su cuenta de Sehelli para que pueda ayudarle.",
+        "pt": "Inicie sessão na sua conta Sehelli para que eu o possa ajudar.",
+        "zh": "请登录您的 Sehelli 账户，我才能帮助您。"
+      }
+    },
+    {
+      "cle": "urgence",
+      "pose": "hello",
+      "quand": "Danger signalé (accident, agression, menace).",
+      "ton": "Calme, posé, sérieux, sans sourire. Articuler le numéro.",
+      "textes": {
+        "fr": "Si vous êtes en danger, appelez tout de suite la police au 17.",
+        "ar": "إذا كنت في خطر، اتصل فورًا بالشرطة على الرقم 17.",
+        "mey": "إلا كنت في خطر، عيّط للبوليس دغيا على 17.",
+        "ff": "So a woni e kulol, noddu polis ɗoon e ɗoon e 17.",
+        "snk": null,
+        "wo": "Bu fekkee ni yaa ngi ci musiba, wootal polis bi léegi ci 17.",
+        "en": "If you are in danger, call the police right away on 17.",
+        "es": "Si está en peligro, llame inmediatamente a la policía al 17.",
+        "pt": "Se estiver em perigo, ligue já para a polícia, número 17.",
+        "zh": "如果您有危险，请立即拨打 17 报警。"
+      }
+    },
+    {
+      "cle": "ticket_cree",
+      "pose": "hello",
+      "quand": "Sahla a transmis un problème à l'équipe support.",
+      "ton": "Rassurant, sérieux.",
+      "textes": {
+        "fr": "C'est noté, j'ai transmis votre demande à l'équipe. On vous recontacte très vite.",
+        "ar": "تم تسجيل طلبك وأرسلته إلى الفريق. سيتواصلون معك قريبًا.",
+        "mey": "تسجل، رسلت طلبك للفريق. يتصلو بيك قريب.",
+        "ff": "Ɗum winndaama, mi neldii ɗaɓɓaande maa e fedde nde. Ɓe noddan ma ko ɓooyaani.",
+        "snk": null,
+        "wo": "Bind naa ko, yónnee naa sa laaj ci équipe bi. Dinañu la woo ci kanam tuuti.",
+        "en": "Noted. I've passed your request to the team, and they'll get back to you very soon.",
+        "es": "Anotado. He enviado su solicitud al equipo; le contactarán muy pronto.",
+        "pt": "Registado. Enviei o seu pedido à equipa; vão contactá-lo muito em breve.",
+        "zh": "已记录，我已将您的请求转交团队，他们会尽快联系您。"
+      }
+    },
+    {
+      "cle": "au_revoir",
+      "pose": "hello",
+      "quand": "Fin de conversation, l'utilisateur remercie.",
+      "ton": "Chaleureux, souriant.",
+      "textes": {
+        "fr": "Avec plaisir ! À bientôt sur Sehelli.",
+        "ar": "بكل سرور! إلى اللقاء على سهّلي.",
+        "mey": "مرحبا! نشوفوك قريب على سهّلي.",
+        "ff": "Ko e weltaare! En njiyondiray e Sehelli.",
+        "snk": null,
+        "wo": "Ak bànneex! Ba beneen yoon ci Sehelli.",
+        "en": "My pleasure! See you soon on Sehelli.",
+        "es": "¡Con mucho gusto! Hasta pronto en Sehelli.",
+        "pt": "Com todo o gosto! Até breve na Sehelli.",
+        "zh": "不客气！期待在 Sehelli 再次为您服务。"
+      }
+    }
+  ]
+}

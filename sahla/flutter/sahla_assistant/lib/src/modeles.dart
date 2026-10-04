@@ -1,5 +1,14 @@
 import 'mascotte/poses.dart';
 
+/// Comment l'utilisateur parle à Sahla.
+enum SahlaCanal {
+  /// Message transcrit depuis la voix ; la réponse sera lue à voix haute.
+  voix,
+
+  /// Chat écrit ; la réponse est affichée.
+  texte,
+}
+
 /// Bouton proposé par Sahla : l'app ouvre l'écran correspondant, pré-rempli,
 /// et c'est l'utilisateur qui confirme.
 class SahlaAction {

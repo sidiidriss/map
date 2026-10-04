@@ -21,12 +21,16 @@ class SahlaMessage {
 
 /// État d'une conversation avec Sahla : messages, expression de la mascotte, envoi.
 class SahlaControleur extends ChangeNotifier {
-  SahlaControleur({required this.client, String langue = 'fr', this.contexte}) : _langue = langue;
+  SahlaControleur({required this.client, String langue = 'fr', this.contexte, this.canal = SahlaCanal.texte})
+      : _langue = langue;
 
   final SahlaClient client;
 
   /// Informations de l'app envoyées avec chaque message (prénom, position, écran).
   final FutureOr<SahlaContexte?> Function()? contexte;
+
+  /// Canal des messages envoyés par [envoyer] (voix ou texte).
+  SahlaCanal canal;
 
   final List<SahlaMessage> messages = [];
   SahlaPose _pose = SahlaPose.hello;
@@ -66,7 +70,13 @@ class SahlaControleur extends ChangeNotifier {
 
     try {
       final infos = await contexte?.call();
-      final flux = client.envoyer(message: texte, langue: _langue, conversationId: _conversationId, contexte: infos);
+      final flux = client.envoyer(
+        message: texte,
+        langue: _langue,
+        conversationId: _conversationId,
+        contexte: infos,
+        canal: canal,
+      );
       await for (final evenement in flux) {
         if (_libere) return;
         switch (evenement) {

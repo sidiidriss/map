@@ -26,6 +26,7 @@ const ici = path.dirname(fileURLToPath(import.meta.url));
 const Cas = z.object({
   id: z.string(),
   langue: z.string(),
+  canal: z.enum(["voix", "texte"]).default("texte"),
   messages: z.array(z.string()).min(1),
   jeton: z.string().optional(),
   outils_attendus: z.array(z.string()).optional(),
@@ -85,6 +86,7 @@ ${transcription}
 Outils appelés par Sahla : ${r.outils.join(", ") || "aucun"}
 Boutons proposés : ${r.actions.map((a) => `${a.ecran} (« ${a.libelle} »)`).join(", ") || "aucun"}
 
+Canal : ${c.canal === "voix" ? "voix (le message de l'utilisateur est une transcription ; les réponses de Sahla sont lues à voix haute)" : "texte"}
 Langue attendue pour les réponses de Sahla : ${c.langue_reponse ?? "aucune contrainte"}
 Comportement attendu : ${c.critere ?? "aucune contrainte"}
 
@@ -112,7 +114,7 @@ async function evaluer(c: Cas): Promise<Resultat> {
     const fin = await assistant.repondre({
       conversation,
       message,
-      contexte: texteContexte({ langue: c.langue, connecte: true, positionPartagee: false }),
+      contexte: texteContexte({ langue: c.langue, canal: c.canal, connecte: true, positionPartagee: false }),
       utilisateur: { authorization: c.jeton ?? "Bearer evals", langue: c.langue },
       emettre: (e) => {
         if (e.type === "texte") texte += e.delta;

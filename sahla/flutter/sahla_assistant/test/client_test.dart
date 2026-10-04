@@ -57,6 +57,7 @@ void main() {
           langue: 'mey',
           conversationId: 'c0',
           contexte: const SahlaContexte(prenom: 'Aminata', latitude: 18.09, longitude: -15.97),
+          canal: SahlaCanal.voix,
         )
         .toList();
 
@@ -66,6 +67,7 @@ void main() {
     final corps = jsonDecode(requete.body) as Map<String, dynamic>;
     expect(corps['message'], 'Salam');
     expect(corps['langue'], 'mey');
+    expect(corps['canal'], 'voix');
     expect(corps['conversation_id'], 'c0');
     expect(corps['contexte'], {
       'prenom': 'Aminata',
