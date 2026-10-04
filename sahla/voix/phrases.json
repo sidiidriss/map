@@ -53,7 +53,7 @@
       "textes": {
         "fr": "Bonjour, je suis Sahla ! Une course, une livraison, votre solde ? Dites-moi, je vous écoute.",
         "ar": "مرحبًا، أنا سهلة! رحلة، توصيل، أو رصيدك؟ تفضّل، أنا أسمعك.",
-        "mey": "السلام عليكم، آن سهلة! تبغي مشوار، توصيل، ولا تشوف رصيدك؟ گول، آن نسمعك.",
+        "mey": "السلام عليكم، آن سهلة! تبغي مشوار، توصيل، ولا تشوف رصيدك؟ گول، آن نسنت لك.",
         "ff": "Jam waali, ko min woni Sahla! Taksi, neldugol colis, walla ceede maa? Haal, mido heddii ma.",
         "snk": null,
         "wo": "Salaam aleekum, maa ngi tudd Sahla! Taksi, yónnee colis, walla sa kalpe? Waxal, maa ngi lay déglu.",
@@ -71,7 +71,7 @@
       "textes": {
         "fr": "Re-bonjour ! Je vous écoute.",
         "ar": "أهلًا من جديد! أنا أسمعك.",
-        "mey": "مرحبا بيك من جديد! آن نسمعك.",
+        "mey": "مرحبا بيك من جديد! آن نسنت لك.",
         "ff": "Jam waali kadi! Mido heddii ma.",
         "snk": null,
         "wo": "Dalal ak jamm! Maa ngi lay déglu.",
@@ -107,7 +107,7 @@
       "textes": {
         "fr": "Pardon, je n'ai pas bien compris. Vous pouvez répéter ?",
         "ar": "عذرًا، لم أفهم جيدًا. هل يمكنك أن تعيد؟",
-        "mey": "اسمح لي، ما فهمت زين. تگدر تعاود؟",
+        "mey": "اسمح لي، ما فهمت زين. تگد تعاود؟",
         "ff": "Yaafo, mi faamaani no feewi. A waawi fillitde?",
         "snk": null,
         "wo": "Baal ma, dégguma bu baax. Mën nga ko baamtu?",
@@ -179,7 +179,7 @@
       "textes": {
         "fr": "Ça prend un peu plus de temps que prévu, je suis toujours là.",
         "ar": "الأمر يستغرق وقتًا أطول قليلًا، ما زلت معك.",
-        "mey": "الحاجة طوّلت شوي، آن مازلت معاك.",
+        "mey": "الرواي طوّل شوي، آن مازلت معاك.",
         "ff": "Ɗum ɓooyii seeɗa, mido wondi e maa tawo.",
         "snk": null,
         "wo": "Dafa yàgg tuuti, waaye maa ngi fi rekk.",
@@ -323,7 +323,7 @@
       "textes": {
         "fr": "Je ne suis pas disponible pour le moment. Réessayez dans un instant.",
         "ar": "لست متاحة حاليًا. حاول بعد قليل.",
-        "mey": "آن ما نگدر نعاونك دروك. عاود من بعد شوي.",
+        "mey": "آن ما نگد نعاونك دروك. عاود من بعد شوي.",
         "ff": "Mi heɓaaka jooni. Fuɗɗito seeɗa.",
         "snk": null,
         "wo": "Mënuma tontu léegi. Jéemaatal tuuti ci kanam.",
@@ -377,7 +377,7 @@
       "textes": {
         "fr": "J'ai besoin du micro pour vous entendre. Vous pouvez aussi m'écrire.",
         "ar": "أحتاج إلى الميكروفون لأسمعك. يمكنك أيضًا أن تكتب لي.",
-        "mey": "نحتاج الميكرو باش نسمعك. تگدر زادة تكتب لي.",
+        "mey": "نحتاج الميكرو باش نسنت لك. تگد زادة تكتب لي.",
         "ff": "Mi soklii mikoro ngam nanude ma. A waawi kadi winndande kam.",
         "snk": null,
         "wo": "Soxla naa mikro bi ngir dégg la. Mën nga it bind ma.",
@@ -395,7 +395,7 @@
       "textes": {
         "fr": "Connectez-vous à votre compte Sehelli pour que je puisse vous aider.",
         "ar": "سجّل الدخول إلى حسابك في سهّلي حتى أتمكن من مساعدتك.",
-        "mey": "ادخل لحسابك في سهّلي باش نگدر نعاونك.",
+        "mey": "ادخل لحسابك في سهّلي باش نگد نعاونك.",
         "ff": "Naatu e konte Sehelli maa ngam mi waawa wallude ma.",
         "snk": null,
         "wo": "Duggal ci sa kont Sehelli ngir ma mën la dimbali.",

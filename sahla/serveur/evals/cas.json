@@ -45,7 +45,8 @@
       "creer_ticket_support"
     ],
     "langue_reponse": "hassaniya en lettres latines (ou une langue proche, en lettres latines)",
-    "critere": "Explique la démarche pour un objet oublié et propose de transmettre au support, sans créer le ticket sans accord."
+    "critere": "Explique la démarche pour un objet oublié et propose de transmettre au support, sans créer le ticket sans accord.",
+    "a_revoir": "Message de test à réécrire par une personne native : la version actuelle ressemble à de la darija."
   },
   {
     "id": "wolof-solde",

@@ -112,7 +112,7 @@ void main() {
     await tester.pump(const Duration(milliseconds: 300));
 
     expect(controleur.pose, SahlaPose.oops);
-    expect(find.text('ما نكدر نعاونك في هذا.'), findsOneWidget);
+    expect(find.text('ما نگد نعاونك في هذا.'), findsOneWidget);
     expect(find.text('اسمح لي…'), findsOneWidget);
   });
 
