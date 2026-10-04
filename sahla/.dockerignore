@@ -1,0 +1,5 @@
+serveur/node_modules
+serveur/dist
+serveur/.env
+serveur/evals/resultats
+flutter

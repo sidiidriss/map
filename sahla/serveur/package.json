@@ -1,0 +1,28 @@
+{
+  "name": "sahla-serveur",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Serveur de l'assistante IA Sahla pour la super-app Sehelli",
+  "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p .",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.verif.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "evals": "tsx evals/lancer-evals.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
